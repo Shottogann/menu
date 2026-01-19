@@ -1,184 +1,306 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu Burger – La Spiaggia nel Panino</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #fafafa;
-      color: #111;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    header img {
-      max-width: 160px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2.6rem;
-      margin: 0;
-    }
-    h2 {
-      font-size: 2rem;
-      margin: 80px 0 40px;
-      border-bottom: 3px solid #111;
-      display: inline-block;
-      padding-bottom: 8px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .card img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 20px;
-    }
-    .card h3 {
-      margin: 0 0 6px;
-      font-size: 1.3rem;
-    }
-    .price {
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-    }
-    .desc {
-      font-size: 0.95rem;
-      line-height: 1.45;
-      color: #444;
-    }
-    footer {
-      text-align: center;
-      padding: 60px 20px 20px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>La Spiaggia nel Panino</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    max-width: 280px;
+}
+
+section {
+    padding: 40px 5%;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #111;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price {
+    float: right;
+    font-weight: 700;
+}
+
+.card-content p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc;
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
 
-    <header>
-      <img src="logo.jpg" alt="La Spiaggia nel Panino">
-      <h1>La Spiaggia nel Panino</h1>
-    </header>
+<header>
+    <img src="logo.jpg" alt="La Spiaggia nel Panino">
+</header>
 
-    <h2>I nostri Fish Burger</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="non-trovo-parcheggio.jpg" alt="Non trovo parcheggio">
-        <div class="card-content">
-          <h3>Non trovo parcheggio</h3>
-          <div class="price">€18</div>
-          <div class="desc">Pane, polpo cbt e fritto, crema di robiola e limone, mosto, scarola spadellata, chips di carota fritta</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="ho-preso-la-multa.jpg" alt="Ho preso la multa">
-        <div class="card-content">
-          <h3>Ho preso la multa</h3>
-          <div class="price">€17</div>
-          <div class="desc">Pane, baccalà fritto, bacon croccante, ketchup di datterino giallo, bufala campana, iceberg</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="ci-sono-meduse-in-mare.jpg" alt="Ci sono meduse in mare?">
-        <div class="card-content">
-          <h3>Ci sono meduse in mare?</h3>
-          <div class="price">€18</div>
-          <div class="desc">Pane, gamberi alla brace, pesto di pistacchi, stracciatella con datterino grigliato e olive taggiasche, iceberg</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="lo-sdraio.jpg" alt="Lo sdraio">
-        <div class="card-content">
-          <h3>Lo sdraio</h3>
-          <div class="price">€17</div>
-          <div class="desc">Pane, polpette di pesce spada al sugo di pomodoro fresco, olive taggiasche, capperi e cipolla</div>
-        </div>
-      </div>
-    </div>
+<!-- FISH BURGER -->
+<section>
+<h2>I nostri fish burger</h2>
+<div class="menu-grid">
 
-    <h2>I nostri Panini di Terra</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="pizza-bianca.jpg" alt="Pizza bianca">
-        <div class="card-content">
-          <h3>Pizza bianca</h3>
-          <div class="price">€12</div>
-          <div class="desc">Panino con fette di panissa fritta</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="vista-mare.jpg" alt="Vista mare">
-        <div class="card-content">
-          <h3>Vista mare</h3>
-          <div class="price">€17</div>
-          <div class="desc">Burger buns, 200g Angus, bacon croccante, crema di cheddar, cipolla caramellata, cuore di bue, iceberg</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="il-foresto.jpg" alt="Il foresto">
-        <div class="card-content">
-          <h3>Il foresto</h3>
-          <div class="price">€16</div>
-          <div class="desc">Burger buns, 200g salamella artigianale, salsa di noci, gorgonzola DOP, cipolla di Tropea cruda, iceberg</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="quanto-mi-fai-mezza-giornata.jpg" alt="Quanto mi fai mezza giornata?">
-        <div class="card-content">
-          <h3>Quanto mi fai mezza giornata?</h3>
-          <div class="price">€17</div>
-          <div class="desc">Burger buns, 200g Fassona, scaglie di parmigiano, pesto di nocciole e pomodori secchi, rucola</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="ma-tu-d-inverno cosa-fai.jpg" alt="Ma tu d'inverno cosa fai?">
-        <div class="card-content">
-          <h3>Ma tu d'inverno cosa fai?</h3>
-          <div class="price">€17</div>
-          <div class="desc">Burger buns, 200g Fassona, uovo al tegamino, crema di peperoni arrosto, cipolla alla griglia, pecorino sardo</div>
-        </div>
-      </div>
-      <div class="card">
-        <img src="il-menabelino.jpg" alt="Il menabelino">
-        <div class="card-content">
-          <h3>Il menabelino</h3>
-          <div class="price">€18</div>
-          <div class="desc">Pane, beyond meat burger, cavolo viola, crema di carote arrosto, maionese vegetale, cipolla di Tropea</div>
-        </div>
-      </div>
-    </div>
+<div class="card">
+<img src="non-trovo-parcheggio.jpg">
+<div class="card-content">
+<h3>Non trovo parcheggio <span class="price">€18</span></h3>
+<p>Pane, Polpo CBT e fritto, crema di robiola e limone, mosto, scarola spadellata, chips di carota fritta</p>
+</div>
+</div>
 
-  </div>
+<div class="card">
+<img src="ho-preso-la-multa.jpg">
+<div class="card-content">
+<h3>Ho preso la multa <span class="price">€17</span></h3>
+<p>Pane, Baccalà fritto, bacon croccante, ketchup di datterino giallo, bufala campana, iceberg</p>
+</div>
+</div>
 
-  <footer>
-    © 2026 – La Spiaggia nel Panino
-  </footer>
+<div class="card">
+<img src="a-spiaggia.jpg">
+<div class="card-content">
+<h3>A spiaggia <span class="price">€18</span></h3>
+<p>Pane, Tataki di tonno, maionese al mojito, cipolla alla brace, burrata pugliese, iceberg</p>
+</div>
+</div>
+
+<div class="card">
+<img src="lo-sdraio.jpg">
+<div class="card-content">
+<h3>Lo sdraio <span class="price">€17</span></h3>
+<p>Pane, Polpette di pesce spada al sugo di pomodoro fresco, olive taggiasche, capperi e cipolla</p>
+</div>
+</div>
+
+<div class="card">
+<img src="ci-sono-meduse-in-mare.jpg">
+<div class="card-content">
+<h3>Ci sono meduse in mare? <span class="price">€18</span></h3>
+<p>Pane, Gamberi alla brace, pesto di pistacchi, stracciatella condita con datterino grigliato e olive taggiasche, iceberg</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- PANINI DI TERRA -->
+<section>
+<h2>I nostri panini di terra</h2>
+<div class="menu-grid">
+
+<div class="card">
+<img src="pizza-bianca.jpg">
+<div class="card-content">
+<h3>Pizza bianca <span class="price">€12</span></h3>
+<p>Panino con fette di panissa fritta</p>
+</div>
+</div>
+
+<div class="card">
+<img src="vista-mare.jpg">
+<div class="card-content">
+<h3>Vista mare <span class="price">€17</span></h3>
+<p>Burger buns, 200g Angus, bacon croccante, crema di cheddar, cipolla caramellata, cuore di bue, iceberg</p>
+</div>
+</div>
+
+<div class="card">
+<img src="il-foresto.jpg">
+<div class="card-content">
+<h3>Il foresto <span class="price">€16</span></h3>
+<p>Burger buns, 200g salamella artigianale, salsa di noci, colata di gorgonzola DOP, cipolla di Tropea cruda, iceberg</p>
+</div>
+</div>
+
+<div class="card">
+<img src="quanto-mi-fai-mezza-giornata.jpg">
+<div class="card-content">
+<h3>Quanto mi fai mezza giornata? <span class="price">€17</span></h3>
+<p>Burger buns, 200g Fassona, scaglie di parmigiano, pesto di nocciole e pomodori secchi, rucola</p>
+</div>
+</div>
+
+<div class="card">
+<img src="ma-tu-d-inverno-cosa-fai.jpg">
+<div class="card-content">
+<h3>Ma tu d'inverno cosa fai? <span class="price">€17</span></h3>
+<p>Burger buns, 200g Fassona, uovo al tegamino, crema di peperoni arrosto, cipolla alla griglia, pecorino sardo</p>
+</div>
+</div>
+
+<div class="card">
+<img src="il-menabelino.jpg">
+<div class="card-content">
+<h3>Il menabelino <span class="price">€18</span></h3>
+<p>Pane, Beyond meat burger, cavolo viola, crema di carote arrosto, maionese vegetale, cipolla di Tropea</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- FRITTI -->
+<section>
+<h2>Già che friggiamo</h2>
+<div class="menu-grid">
+
+<div class="card">
+<img src="cuoppo-la-spiaggia.jpg">
+<div class="card-content">
+<h3>Cuoppo La Spiaggia <span class="price">€18</span></h3>
+<p>Alici, calamari, baccalà, cipolla rossa, salvia</p>
+</div>
+</div>
+
+<div class="card">
+<img src="cuoppo-panissa.jpg">
+<div class="card-content">
+<h3>Cuoppo panissa <span class="price">€10</span></h3>
+<p>Panissa fritta</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- POKE -->
+<section>
+<h2>Poké</h2>
+<div class="menu-grid">
+
+<div class="card">
+<img src="tuna-bowl.jpg">
+<div class="card-content">
+<h3>Tuna bowl <span class="price">€16</span></h3>
+<p>Tataki di tonno, riso basmati, edamame, guacamole, carote, sesamo, cipolla crispy, salsa teriyaki</p>
+</div>
+</div>
+
+<div class="card">
+<img src="bowl-al-salmone.jpg">
+<div class="card-content">
+<h3>Bowl al salmone <span class="price">€16</span></h3>
+<p>Salmone affumicato, riso basmati, mango, cetriolo, mandorle, cavolo viola, salsa allo yogurt</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- INSALATE -->
+<section>
+<h2>Le insalate</h2>
+<div class="menu-grid">
+
+<div class="card">
+<img src="la-classica.jpg">
+<div class="card-content">
+<h3>La classica <span class="price">€14</span></h3>
+<p>Insalata, cuore di bue, carote, tonno, uova, mozzarella, olive taggiasche</p>
+</div>
+</div>
+
+<div class="card">
+<img src="la-greca.jpg">
+<div class="card-content">
+<h3>La greca <span class="price">€14</span></h3>
+<p>Insalata, feta, cipolla di Tropea, cuore di bue, cetriolo, olive taggiasche, origano, crostini</p>
+</div>
+</div>
+
+<div class="card">
+<img src="la-sfiziosa.jpg">
+<div class="card-content">
+<h3>La sfiziosa <span class="price">€15</span></h3>
+<p>Insalata, bacon croccante, mela, cuore di bue, noci, miele</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- DOLCI -->
+<section>
+<h2>I dolci di Tartimarti</h2>
+<div class="menu-grid">
+
+<div class="card">
+<img src="bomba-di-mele.jpg">
+<div class="card-content">
+<h3>Bomba di mele <span class="price">€6</span></h3>
+<p>Base frolla, torta di mele e mandorle, gelato fiordilatte e caramello salato</p>
+</div>
+</div>
+
+<div class="card">
+<img src="tiramispiaaggia.jpg">
+<div class="card-content">
+<h3>Tiramiaspiaggia</h3>
+<p>Tiramisù mascarpone, biscotti al cioccolato e crema di nocciola</p>
+</div>
+</div>
+
+<div class="card">
+<img src="cheesecake.jpg">
+<div class="card-content">
+<h3>Cheesecake</h3>
+<p>Cheesecake cotta al forno, crema di pistacchi</p>
+</div>
+</div>
+
+</div>
+</section>
+<footer>
+© 2026 – La Spiaggia nel Panino
+</footer>
 </body>
 </html>
-
