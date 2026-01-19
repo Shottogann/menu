@@ -12,56 +12,49 @@
       color: #111;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
     }
-    .logo {
+    header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 60px;
     }
-    .logo img {
-      max-width: 220px;
-      width: 100%;
-      height: auto;
+    header img {
+      max-width: 160px;
+      margin-bottom: 20px;
     }
     h1 {
-      text-align: center;
-      font-size: 2.4rem;
-      margin-bottom: 50px;
+      font-size: 2.6rem;
+      margin: 0;
     }
     h2 {
-      font-size: 1.9rem;
-      margin: 60px 0 30px;
+      font-size: 2rem;
+      margin: 80px 0 40px;
       border-bottom: 3px solid #111;
       display: inline-block;
       padding-bottom: 8px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
     }
     .card {
       background: #fff;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      padding: 0;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
       display: flex;
       flex-direction: column;
-      overflow: hidden;
     }
     .card img {
       width: 100%;
-      height: 200px;
+      height: 190px;
       object-fit: cover;
     }
     .card-content {
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+      padding: 20px;
     }
     .card h3 {
       margin: 0 0 6px;
@@ -79,7 +72,7 @@
     }
     footer {
       text-align: center;
-      padding: 40px 20px 20px;
+      padding: 60px 20px 20px;
       font-size: 0.9rem;
       color: #777;
     }
@@ -88,166 +81,96 @@
 <body>
   <div class="container">
 
-    <div class="logo">
+    <header>
       <img src="logo.jpg" alt="La Spiaggia nel Panino">
-    </div>
-
-    <h1>La Spiaggia nel Panino</h1>
+      <h1>La Spiaggia nel Panino</h1>
+    </header>
 
     <h2>I nostri Fish Burger</h2>
     <div class="grid">
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Pane, Polpo cbt e fritto, crema di robiola e limone, mosto, scarola spadellata, chips di carota fritta</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Pane, Baccalà fritto, bacon croccante, ketchup di datterino giallo, bufala campana, iceberg</div>
+        <img src="non-trovo-parcheggio.jpg" alt="Non trovo parcheggio">
+        <div class="card-content">
+          <h3>Non trovo parcheggio</h3>
+          <div class="price">€18</div>
+          <div class="desc">Pane, polpo cbt e fritto, crema di robiola e limone, mosto, scarola spadellata, chips di carota fritta</div>
+        </div>
       </div>
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Pane, tataki di tonno, maionese al mojito, cipolla alla brace, burrata pugliese, iceberg</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Pane, polpette di pesce spada al sugo di pomodoro fresco, olive taggiasche, capperi e cipolla</div>
+        <img src="ho-preso-la-multa.jpg" alt="Ho preso la multa">
+        <div class="card-content">
+          <h3>Ho preso la multa</h3>
+          <div class="price">€17</div>
+          <div class="desc">Pane, baccalà fritto, bacon croccante, ketchup di datterino giallo, bufala campana, iceberg</div>
+        </div>
       </div>
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
+        <img src="ci-sono-meduse-in-mare.jpg" alt="Ci sono meduse in mare?">
+        <div class="card-content">
+          <h3>Ci sono meduse in mare?</h3>
+          <div class="price">€18</div>
+          <div class="desc">Pane, gamberi alla brace, pesto di pistacchi, stracciatella con datterino grigliato e olive taggiasche, iceberg</div>
+        </div>
       </div>
-        <div class="desc">Pane, gamberi alla brace, pesto di pistacchi, stracciatella con datterino grigliato e olive taggiasche, iceberg</div>
+      <div class="card">
+        <img src="lo-sdraio.jpg" alt="Lo sdraio">
+        <div class="card-content">
+          <h3>Lo sdraio</h3>
+          <div class="price">€17</div>
+          <div class="desc">Pane, polpette di pesce spada al sugo di pomodoro fresco, olive taggiasche, capperi e cipolla</div>
+        </div>
       </div>
     </div>
 
     <h2>I nostri Panini di Terra</h2>
     <div class="grid">
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Panino con le fette di panissa fritta</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Burger buns, 200g Fassona, cheddar, cuore di bue, insalata</div>
+        <img src="pizza-bianca.jpg" alt="Pizza bianca">
+        <div class="card-content">
+          <h3>Pizza bianca</h3>
+          <div class="price">€12</div>
+          <div class="desc">Panino con fette di panissa fritta</div>
+        </div>
       </div>
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Burger buns, 200g Angus, bacon croccante, crema di cheddar, cipolla caramellata, cuore di bue, iceberg</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Burger buns, 200g salamella artigianale, salsa di noci, colata di gorgonzola DOP, cipolla di Tropea cruda, iceberg</div>
+        <img src="vista-mare.jpg" alt="Vista mare">
+        <div class="card-content">
+          <h3>Vista mare</h3>
+          <div class="price">€17</div>
+          <div class="desc">Burger buns, 200g Angus, bacon croccante, crema di cheddar, cipolla caramellata, cuore di bue, iceberg</div>
+        </div>
       </div>
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Burger buns, 200g Fassona, scaglie di parmigiano, pesto di nocciole e pomodori secchi, rucola</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Burger buns, 200g Fassona, uovo al tegamino, crema di peperoni arrosto, cipolla alla griglia, pecorino sardo</div>
+        <img src="il-foresto.jpg" alt="Il foresto">
+        <div class="card-content">
+          <h3>Il foresto</h3>
+          <div class="price">€16</div>
+          <div class="desc">Burger buns, 200g salamella artigianale, salsa di noci, gorgonzola DOP, cipolla di Tropea cruda, iceberg</div>
+        </div>
       </div>
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Pane, beyond meat burger, cavolo viola, crema di carote arrosto, maionese vegetale, cipolla di Tropea</div>
-      </div>
-    </div>
-  
-
-    <h2>Fritti</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Alici, calamari, baccalà, cipolla rossa, salvia</div>
+        <img src="quanto-mi-fai-mezza-giornata.jpg" alt="Quanto mi fai mezza giornata?">
+        <div class="card-content">
+          <h3>Quanto mi fai mezza giornata?</h3>
+          <div class="price">€17</div>
+          <div class="desc">Burger buns, 200g Fassona, scaglie di parmigiano, pesto di nocciole e pomodori secchi, rucola</div>
+        </div>
       </div>
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Panissa fritta</div>
-      </div>
-    </div>
-
-    <h2>Insalate</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Insalata, cuore di bue, carote, tonno, uova, mozzarella, olive taggiasche</div>
+        <img src="ma-tu-d-inverno-cosa-fai.jpg" alt="Ma tu d'inverno cosa fai?">
+        <div class="card-content">
+          <h3>Ma tu d'inverno cosa fai?</h3>
+          <div class="price">€17</div>
+          <div class="desc">Burger buns, 200g Fassona, uovo al tegamino, crema di peperoni arrosto, cipolla alla griglia, pecorino sardo</div>
+        </div>
       </div>
       <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Insalata, feta, cipolla di Tropea, cuore di bue, cetriolo, olive taggiasche, origano, crostini</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Insalata, bacon croccante, mela, cuore di bue, noci, miele</div>
-      </div>
-    </div>
-
-    <h2>Poké</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Tataki di tonno, riso basmati, edamame, guacamole, carote, sesamo, cipolla crispy, salsa teriyaki</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Salmone affumicato, riso basmati, mango, cetriolo, mandorle, cavolo viola, salsa allo yogurt</div>
-      </div>
-    </div>
-
-    <h2>Dolci</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Base frolla, torta di mele e mandorle, gelato fior di latte e caramello salato</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Tiramisù mascarpone, biscotti al cioccolato e crema di nocciole</div>
-      </div>
-      <div class="card">
-        <img src="$1.jpg" alt="$1">
-        <div class="card-content">$1</div>
-      </div>
-        <div class="desc">Cheesecake cotta al forno, crema di pistacchi</div>
+        <img src="il-menabelino.jpg" alt="Il menabelino">
+        <div class="card-content">
+          <h3>Il menabelino</h3>
+          <div class="price">€18</div>
+          <div class="desc">Pane, beyond meat burger, cavolo viola, crema di carote arrosto, maionese vegetale, cipolla di Tropea</div>
+        </div>
       </div>
     </div>
 
